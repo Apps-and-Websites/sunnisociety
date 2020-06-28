@@ -2,7 +2,7 @@
   grid-area: content;
 
   @include respond(desktop) {
-    min-height: calc(80vh - 10rem);
+    // max-height: calc(80vh - 10rem);
   }
   //   position: relative;
   top: 5rem;

@@ -15,7 +15,14 @@ body {
   background: $color-white-2;
 
   @include respond(desktop) {
-    background: $color-primary;
+    background: $color-dark;
+
+    //   background: linear-gradient(
+    //       to right bottom,
+    //       rgba($color-dark, 0.6),
+    //       rgba($color-dark, 1)
+    //     )
+    //     fixed;
   }
 }
 
