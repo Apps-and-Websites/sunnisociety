@@ -9,7 +9,10 @@ function ResponsiveNav(props) {
 
   return (
     <nav className={navigationStyle}>
-      <ul className={props.navOpen ? "active" : ""}>
+      <ul
+        onMouseLeave={() => props.setNavOpen(false)}
+        className={props.navOpen ? "active" : ""}
+      >
         {navLinks.map((link, index) => (
           <li
             onMouseEnter={() => setHoverIndex(index)}
@@ -17,10 +20,7 @@ function ResponsiveNav(props) {
             style={{ background: hoverIndex === index ? "green" : "" }}
             key={link.text}
           >
-            <Link
-              to={link.path}
-              onClick={() => props.setNavOpen(!props.navOpen)}
-            >
+            <Link to={link.path} onClick={() => props.setNavOpen(false)}>
               {link.text}
               {currentWindowWidth >= 1300 ? "" : <i className={link.icon}></i>}
             </Link>

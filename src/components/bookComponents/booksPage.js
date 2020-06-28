@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { bindActionCreators } from "redux";
-import { Link } from "react-router-dom";
+import Loader from "react-loader-spinner";
 
 import * as bookActions from "../../redux/actions/bookActions";
 import BookCard from "./bookCard";
@@ -20,9 +20,18 @@ class bookPage extends Component {
     return (
       <section className="bookContainer paddingTop-big">
         <h1 className="heading-primary">Our Books</h1>
-        {books.map((book) => (
-          <BookCard key={book.id} book={book} />
-        ))}
+
+        {books.length > 0 ? (
+          books.map((book) => <BookCard key={book.id} book={book} />)
+        ) : (
+          <Loader
+            type="Circles"
+            color="green"
+            height={200}
+            width={200}
+            className="marginTop-big"
+          />
+        )}
       </section>
     );
   }

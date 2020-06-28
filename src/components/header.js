@@ -32,6 +32,7 @@ function Header(props) {
             navOpen={navOpen}
             navigationStyle={navigationStyle}
             currentWindowWidth={currentWindowWidth}
+            setNavOpen={setNavOpen}
           />
           <span></span>
         </header>
