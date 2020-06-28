@@ -4,12 +4,14 @@
   background-color: $color-dark;
   position: fixed;
   bottom: 0;
-  max-height: 5rem;
-  height: 100%;
+  min-height: 5rem;
   width: 100%;
+  padding: 0.2rem;
 
   color: $color-white-1;
   font-size: 1.4rem;
+  line-height: 2rem;
+  text-align: center;
 
   display: flex;
   justify-content: center;
