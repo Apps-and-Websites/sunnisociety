@@ -3,7 +3,9 @@ import { useHistory } from "react-router-dom";
 // import WindowSizeListener from "react-window-size-listener";
 import { withWindowSizeListener } from "react-window-size-listener";
 
-import logo from "../assets/images/logo.png";
+import logoDark from "../assets/images/logoDark.png";
+import logoWhite from "../assets/images/logoWhite.png";
+
 import logoDesktop from "../assets/images/logoDesktop.png";
 import NavBar from "./navigationMenu/responsiveNav";
 
@@ -46,7 +48,7 @@ function Header(props) {
             <span className={hamburgerIconStyle}>&nbsp;</span>
           </button>
           <figure onClick={() => history.push("/")}>
-            <img src={logo} alt="logo" className="header__logo" />
+            <img src={logoWhite} alt="logo" className="header__logo" />
           </figure>
           <span></span>
         </header>
