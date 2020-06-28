@@ -1,0 +1,57 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2rem 0;
+
+  &__image {
+    padding: 2rem 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  a.btn-download {
+    color: $color-white-1;
+    font-size: 2rem;
+    text-decoration: none;
+    background: $color-secondary;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+
+    &:hover {
+      background: $color-dark-light;
+    }
+  }
+
+  &__nav {
+    align-self: stretch;
+    padding: 2rem 0;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    li {
+      padding: 1rem 2rem;
+      color: $color-primary;
+
+      &:hover {
+        background: $color-grey;
+        color: $color-white-1;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 2rem;
+      margin: 0 1rem;
+      color: currentColor;
+    }
+  }
+}

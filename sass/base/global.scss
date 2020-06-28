@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  box-sizing: border-box;
+  background: $color-white-2;
+
+  @include respond(desktop) {
+    background: $color-primary;
+  }
+}
+
+#root {
+  @include respond(desktop) {
+    max-width: 1200px;
+    margin: 3rem auto;
+    background: $color-white-2;
+    box-shadow: 20px 20px 100px $color-secondary;
+    padding: 0;
+  }
+}
+
+.App {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "navigation"
+    "content"
+    "footer";
+
+  grid-template-columns: 1fr 10fr;
+  grid-template-areas:
+    "header header"
+    "content content"
+    "footer footer";
+
+  @include respond(mobile) {
+    grid-template-columns: 60px 1fr;
+
+    grid-template-areas:
+      "header header"
+      "navigation content"
+      "footer footer";
+  }
+
+  @include respond(desktop) {
+    padding: 1rem 1rem 0 1rem;
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+      "header"
+      "content "
+      "footer ";
+  }
+}

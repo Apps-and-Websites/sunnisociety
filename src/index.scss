@@ -1,0 +1,19 @@
+@import "../sass/base/reset.scss";
+@import "../sass/abstracts/variables.scss";
+@import "../sass/abstracts/mixins.scss";
+@import url("https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css");
+
+//base
+@import "../sass/base/global.scss";
+@import "../sass/pages/header.scss";
+@import "../sass/base/typography.scss";
+
+//components
+@import "../sass/components/toolbar.scss";
+@import "../sass/components/navigation.scss";
+@import "../sass/components/hamburgerIconButton.scss";
+
+// pages
+@import "../sass/pages/footer.scss";
+@import "../sass/pages/contentContainer.scss";
+@import "../sass/pages/home.scss";

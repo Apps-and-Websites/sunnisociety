@@ -1,0 +1,86 @@
+.hamburgerButton {
+  background: $color-dark;
+  height: 5rem;
+  width: 5rem;
+  cursor: pointer;
+
+  align-self: stretch;
+  justify-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__active {
+    background-color: $color-dark-light;
+  }
+}
+
+.hamburgerIcon {
+  position: relative;
+
+  &,
+  &::before,
+  &::after {
+    width: 3rem;
+    height: 2px;
+    background-color: $color-white-1;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+  }
+
+  &::before {
+    top: -0.8rem;
+  }
+
+  &::after {
+    top: 0.8rem;
+  }
+}
+
+.hamburgerIconActive {
+  position: relative;
+  background-color: transparent;
+
+  &,
+  &::before,
+  &::after {
+    width: 3rem;
+    height: 2px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+    background-color: $color-white-1;
+  }
+
+  &::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+}
+
+button {
+  all: unset;
+  -webkit-text-fill-color: none;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}

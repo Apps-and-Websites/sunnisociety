@@ -1,0 +1,11 @@
+.container {
+  grid-area: content;
+
+  @include respond(desktop) {
+    min-height: calc(80vh - 10rem);
+  }
+  //   position: relative;
+  top: 5rem;
+  left: 5rem;
+  bottom: 5rem;
+}

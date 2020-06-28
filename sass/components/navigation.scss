@@ -1,0 +1,99 @@
+.navigation {
+  grid-area: navigation;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    position: fixed;
+    top: 5.2rem;
+    bottom: 5rem;
+    max-width: 55rem;
+    width: 100%;
+    padding: 1rem 0 0 0;
+    left: -50rem;
+
+    // @media screen and (min-width: 380px) {
+    //   left: -35rem;
+    // }
+
+    @include respond(desktop) {
+      position: inherit;
+      flex-direction: row;
+      max-width: inherit;
+      left: inherit;
+      padding: inherit;
+    }
+
+    background: $color-dark;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    box-shadow: 2px 2px 2px $color-grey;
+
+    &.active {
+      left: 0;
+
+      a {
+        margin: 0 2rem;
+      }
+    }
+  }
+
+  li {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    color: $color-white-1;
+    text-decoration: none;
+    margin: 0 1.2rem 0 2rem;
+    font-size: 2rem;
+    line-height: 5rem;
+
+    // @media screen and (min-width: 395px) {
+    //   margin: 0 1.2rem 0 2rem;
+    // }
+  }
+
+  i {
+    margin-right: 5px;
+    font-size: 2rem;
+  }
+}
+
+// style for desktop only
+
+.navigationDesktop {
+  ul {
+    display: flex;
+
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+  }
+
+  li {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  a {
+    color: $color-dark;
+    text-decoration: none;
+    margin: 0 2rem;
+    font-size: 2rem;
+    line-height: 5rem;
+  }
+}
