@@ -1,0 +1,38 @@
+.bookCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: $color-secondary-light;
+  margin: 2rem 0;
+  padding: 2rem 4rem;
+
+  & > * {
+    margin: 2rem 0;
+  }
+
+  &__heading {
+    font-size: 4.5rem;
+    color: $color-dark;
+  }
+
+  &__image {
+    align-self: stretch;
+    justify-self: stretch;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  &__download {
+    font-size: 3rem;
+    line-height: 3rem;
+    text-decoration: none;
+    color: $color-white-2;
+    background: $color-dark;
+    padding: 2rem 3rem;
+    border-radius: 50%;
+  }
+}

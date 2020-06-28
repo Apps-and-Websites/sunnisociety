@@ -4,20 +4,25 @@ import PropTypes from "prop-types";
 import { bindActionCreators } from "redux";
 import { Link } from "react-router-dom";
 
-import * as bookActions from "../redux/actions/bookActions";
+import * as bookActions from "../../redux/actions/bookActions";
+import BookCard from "./bookCard";
 
 class bookPage extends Component {
   componentDidMount() {
-    const { actions } = this.props;
-
-    actions.loadBooks().catch((err) => alert("error loading books", err));
+    const { actions, books } = this.props;
+    if (books.length === 0) {
+      actions.loadBooks().catch((err) => alert("error loading books", err));
+    }
   }
 
   render() {
-    console.log("books from page: ", this.props.books);
+    const { books } = this.props;
     return (
-      <section className="bookContainer">
-        <h1>Book Container</h1>
+      <section className="bookContainer paddingTop-big">
+        <h1 className="heading-primary">Our Books</h1>
+        {books.map((book) => (
+          <BookCard key={book.id} book={book} />
+        ))}
       </section>
     );
   }
@@ -29,7 +34,6 @@ bookPage.propTypes = {
 };
 
 function mapStateToProps(state) {
-  console.log("state: ", state);
   return {
     books: state.books,
   };

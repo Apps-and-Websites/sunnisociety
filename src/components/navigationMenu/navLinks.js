@@ -4,6 +4,12 @@ export const navLinks = [
     path: "/",
     icon: "ion-ios-home",
   },
+
+  {
+    text: "Books",
+    path: "/books",
+    icon: "ion-ios-book",
+  },
   // {
   //   text: "Contact",
   //   path: "/contact",

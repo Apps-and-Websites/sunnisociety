@@ -1,12 +1,16 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 import Home from "./contentsPages/Home";
+import BookList from "./bookComponents/booksPage";
 
 export default function contentContainer() {
   return (
     <main className="container">
-      <Route exact path="/" component={Home} />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/books" component={BookList} />
+      </Switch>
     </main>
   );
 }

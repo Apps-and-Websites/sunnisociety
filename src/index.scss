@@ -7,13 +7,16 @@
 @import "../sass/base/global.scss";
 @import "../sass/pages/header.scss";
 @import "../sass/base/typography.scss";
+@import "../sass/base/utilities.scss";
 
 //components
 @import "../sass/components/toolbar.scss";
 @import "../sass/components/navigation.scss";
 @import "../sass/components/hamburgerIconButton.scss";
+@import "../sass/components/bookCard.scss";
 
 // pages
 @import "../sass/pages/footer.scss";
 @import "../sass/pages/contentContainer.scss";
 @import "../sass/pages/home.scss";
+@import "../sass/pages/bookContainer.scss";

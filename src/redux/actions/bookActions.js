@@ -6,7 +6,7 @@ export function loadBooks() {
     return axios
       .get("https://sunnisociety.herokuapp.com/api/books")
       .then((books) => {
-        dispatch({ type: types.LOAD_BOOKS_SUCCESS, books });
+        dispatch({ type: types.LOAD_BOOKS_SUCCESS, books: books.data });
       })
       .catch((err) => {
         throw err;
