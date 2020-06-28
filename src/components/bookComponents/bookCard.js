@@ -44,7 +44,9 @@ export default function bookCard(props) {
     <article className="bookCard">
       <h2 className="bookCard__heading">{name}</h2>
       <div className="bookCard__image">
-        <img src={getImageUrl(photoLink)} alt={name} />
+        <a href={bookLink} target="_blank" rel="noopener noreferrer">
+          <img src={getImageUrl(photoLink)} alt={name} />
+        </a>
       </div>
       <a
         className="bookCard__download"
@@ -52,7 +54,7 @@ export default function bookCard(props) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Download2
+        Download
       </a>
     </article>
   );

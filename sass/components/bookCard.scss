@@ -34,5 +34,13 @@
     background: $color-dark;
     padding: 2rem 3rem;
     border-radius: 50%;
+    cursor: pointer;
+
+    @include respond(desktop) {
+      &:hover {
+        background: $color-secondary;
+        color: $color-dark;
+      }
+    }
   }
 }
