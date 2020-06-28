@@ -17,7 +17,10 @@ function ResponsiveNav(props) {
             style={{ background: hoverIndex === index ? "green" : "" }}
             key={link.text}
           >
-            <Link to={link.path}>
+            <Link
+              to={link.path}
+              onClick={() => props.setNavOpen(!props.navOpen)}
+            >
               {link.text}
               {currentWindowWidth >= 1300 ? "" : <i className={link.icon}></i>}
             </Link>
