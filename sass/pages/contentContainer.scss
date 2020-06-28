@@ -5,7 +5,10 @@
     // max-height: calc(80vh - 10rem);
   }
   //   position: relative;
-  top: 5rem;
-  left: 5rem;
-  bottom: 5rem;
+
+  margin-bottom: 8rem;
+
+  @include respond(desktop) {
+    margin-bottom: unset;
+  }
 }

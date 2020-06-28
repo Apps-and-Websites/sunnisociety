@@ -13,6 +13,7 @@ html {
 body {
   box-sizing: border-box;
   background: $color-white-2;
+  height: 100vh;
 
   @include respond(desktop) {
     background: $color-dark;
