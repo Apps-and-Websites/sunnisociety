@@ -1,5 +1,5 @@
 import React from "react";
-import { useHistory, Link } from "react-router-dom";
+// import { useHistory, Link } from "react-router-dom";
 
 export default function Home() {
   const Book = {
@@ -14,21 +14,6 @@ export default function Home() {
     language: "Urdu",
   };
 
-  const Link =
-    "https://drive.google.com/file/d/1HVTkUcP2jEP2KvkU8FwdF4LpFUwDTbF4/view";
-
-  const LinkSplit = Link.split("/");
-
-  let urlId = "";
-
-  LinkSplit.forEach((c, index, array) => {
-    if (array[index - 1] === "d") {
-      urlId = c;
-    }
-  });
-
-  console.log("Link: ", urlId);
-  const Image = `https://drive.google.com/thumbnail?id=${urlId}`;
   return (
     <div className="home">
       <h1 className="heading-primary">{Book.name}</h1>

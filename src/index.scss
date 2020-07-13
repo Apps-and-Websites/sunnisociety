@@ -14,9 +14,15 @@
 @import "../sass/components/navigation.scss";
 @import "../sass/components/hamburgerIconButton.scss";
 @import "../sass/components/bookCard.scss";
+@import "../sass/components/form.scss";
+@import "../sass/components/buttons.scss";
 
 // pages
 @import "../sass/pages/footer.scss";
 @import "../sass/pages/contentContainer.scss";
 @import "../sass/pages/home.scss";
 @import "../sass/pages/bookContainer.scss";
+@import "../sass/pages/dashboard.scss";
+
+// admin dashboard
+@import "../sass/adminDashboard/base.scss";

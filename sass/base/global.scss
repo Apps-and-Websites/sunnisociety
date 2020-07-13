@@ -29,6 +29,7 @@ body {
 
 #root {
   @include respond(desktop) {
+    height: "1000px";
     max-width: 1200px;
     margin: 3rem auto;
     background: $color-white-2;

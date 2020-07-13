@@ -1,0 +1,15 @@
+.btn {
+  font-size: 2rem;
+  cursor: pointer;
+  background: $color-dark;
+  color: $color-white-1;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+}
+
+.btn-inline {
+  font-size: 1.4rem;
+  text-decoration: underline;
+  color: $color-dark;
+  cursor: pointer;
+}
