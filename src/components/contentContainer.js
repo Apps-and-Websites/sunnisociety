@@ -8,8 +8,8 @@ export default function contentContainer() {
   return (
     <main className="container">
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/books" component={BookList} />
+        <Route exact path="/home" component={Home} />
+        <Route path="/home/books" component={BookList} />
       </Switch>
     </main>
   );

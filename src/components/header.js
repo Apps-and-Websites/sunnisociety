@@ -25,7 +25,7 @@ function Header(props) {
     return (
       <>
         <header className="headerDesktop">
-          <figure onClick={() => history.push("/")}>
+          <figure onClick={() => history.push("/home")}>
             <img src={logoDesktop} alt="logo" className="headerDesktop__logo" />
           </figure>
           <NavBar
@@ -48,7 +48,7 @@ function Header(props) {
           >
             <span className={hamburgerIconStyle}>&nbsp;</span>
           </button>
-          <figure onClick={() => history.push("/")}>
+          <figure onClick={() => history.push("/home")}>
             <img src={logoWhite} alt="logo" className="header__logo" />
           </figure>
           <span></span>

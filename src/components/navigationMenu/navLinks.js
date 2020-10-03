@@ -1,13 +1,13 @@
 export const navLinks = [
   {
     text: "Home",
-    path: "/",
+    path: "/home",
     icon: "ion-ios-home",
   },
 
   {
     text: "Books",
-    path: "/books",
+    path: "/home/books",
     icon: "ion-ios-book",
   },
   // {

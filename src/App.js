@@ -5,6 +5,7 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import ContentContainer from "./components/contentContainer";
+import LandingPage from "./components/landingpage";
 
 import Dashboard from "./adminComponents/dashboard";
 
@@ -13,11 +14,21 @@ function App() {
     <Switch>
       <Route path="/admin" component={Dashboard} />
 
-      <div className="App">
+      <Route exact path="/" component={LandingPage} />
+
+      <Route path="/home">
+        <div className="App">
+          <Header />
+          <ContentContainer />
+          <Footer />
+        </div>
+      </Route>
+
+      {/* <div className="App">
         <Header />
         <ContentContainer />
         <Footer />
-      </div>
+      </div> */}
     </Switch>
   );
 }
