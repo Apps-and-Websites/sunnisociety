@@ -34,7 +34,13 @@ export default function Home() {
       <nav className="home__nav">
         <ul>
           <li>
-            <a href="#">Fatawa</a>
+            <a
+              href="http://www.ahlesunnat.net/past-event-s.php"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Bayan
+            </a>
           </li>
           <li>
             <a
