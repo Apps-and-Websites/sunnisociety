@@ -81,7 +81,7 @@
       background-color: brown;
 
       @include respond(mobile) {
-        width: 20rem;
+        width: 15rem;
       }
     }
 
