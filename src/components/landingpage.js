@@ -30,7 +30,15 @@ function LandingPage() {
           </div>
           <span className="landingpage__logoContainer-lineright">&nbsp;</span>
         </figure>
-        <button className="landingpage__btn">Fatwa</button>
+        <button className="landingpage__btn">
+          <a
+            href="https://daruliftaahlesunnat.net/book/ur"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Fatwa
+          </a>
+        </button>
       </div>
     </div>
   );
